@@ -4,7 +4,7 @@ Acoustic scattering models that are applied to marine and freshwater animals oft
 The folders are arranged as:
 - **[Schema](https://github.com/nmfs-ost/AA-SI_echoSMs/tree/main/Anatomical_Database/Schema)**
   - The JSON schema used by the data store
-- **Example_Data**
+- **[Example_Data](https://github.com/nmfs-ost/AA-SI_echoSMs/tree/main/Anatomical_Database/Example_Data)**
   - JSON file that is used for each anatomical feature
   - toml file that is generated from the JSON file. The toml file is the file that is used in echoSMs to input data to a scattering model.
 - **Python_Code**
