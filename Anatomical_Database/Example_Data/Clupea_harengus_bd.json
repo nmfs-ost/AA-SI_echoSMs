@@ -1,0 +1,50 @@
+{
+    "anatomical_category": "organism",
+    "anatomical_feature": "body",
+    "aphia_id": 126417,
+    "boundary": "fluid",
+    "dataset_id": "",
+    "dataset_size": 0,
+    "dataset_size_units": "megabyte",
+    "date_collection": "2000-09-01",
+    "date_created": "2001-09-01",
+    "date_image": "2001-08-01",
+    "date_last_modified": "2001-09-01",
+    "description": ["Atlantic herring dorsal and lateral outlines from radiographs"],
+    "imaging_method": "radiograph",
+    "specimen_condition": "frozen",
+    "specimen_id": "aherr001",
+    "activity_name": "NEFSC Atlantic Herring Survey",
+    "data_collection_description": "Herring captured in a cod-end aquarium attached to a High Speed Midwater Rope Trawl (HSMRT). Frozen in a freezer on the ship and then stored in the walk-in freezer at the NEFSC.",
+    "investigators": ["Josef Michael Jech"],
+    "location": "Georges Bank, USA",
+    "mass_density_method": "literature",
+    "model_type": "KRM",
+    "notes": "Labeled by Jech as aherr001 for original data set",
+    "reference": "TBD: maybe Jech-JASA",
+    "radiograph_settings": {
+        "lateral": {
+            "exposure_time": 0.18,
+            "exposure_time_units": "second",
+            "focal_length": 27,
+            "focal_length_units": "inch",
+            "kVp": 60,
+            "MA": 25
+        },
+        "dorsal": {
+            "exposure_time": 0.20,
+            "exposure_time_units": "second",
+            "focal_length": 27,
+            "focal_length_units": "inch",
+            "kVp": 60,
+            "MA": 25
+        }
+    },
+    "shape_type": "outline",
+    "shape_units": "millimeter",
+    "shape_method": "manual outline of image(s)",
+    "shape_method_processing": "The frozen specimen was radiographed in dorsal and lateral views. The silhouettes (outlines) of the fish body and swimbladder were manually traced onto acetate. The outlines were digitized on an Epson scanner. The digital outlines were processed using automated routines developed by M. Jech in the Interactive Data Language (IDL) software language.",
+    "sound_speed_method": "literature",
+    "specimen_length_type": "standard length",
+    "specimen_length_unit": "millimeter"
+}
