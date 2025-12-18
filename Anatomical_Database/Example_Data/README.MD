@@ -11,7 +11,7 @@ Example data files for the schema (JSON format) and raw data files
     - the JSON-format file that has the required metadata as defined in the schema for the swimbladder ("sb") anatomical feature
 - **lavnun**
   - **[lavnun](https://github.com/nmfs-ost/AA-SI_echoSMs/blob/main/Anatomical_Database/Example_Data/lavn01.dat)**
-    - Original data file for a lavnun (*Acanthobrama*) that was used as input to the KRM model IDL code developed my J. Jech and J. Horne.
+    - Original data file for a lavnun (*Acanthobrama spp.*) that was used as input to the KRM model IDL code developed my J. Jech and J. Horne.
 - **pilchard**
   - **[pilchard](https://github.com/nmfs-ost/AA-SI_echoSMs/blob/main/Anatomical_Database/Example_Data/plch11.dat)**
     - Original data file for a pilchard (*Sardina pilchardus*) that was used as input to the KRM model IDL code developed my J. Jech and J. Horne.
