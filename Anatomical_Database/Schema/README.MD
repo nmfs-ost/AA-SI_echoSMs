@@ -1,2 +1,5 @@
 ## echoSMs Datastore Schema
-JSON file that defines the data store schema
+The schema defines the parameters and data that are needed to input data to the scattering models</br>
+
+Gavin Macaulay's original schema [anatomical_data_store.json](https://github.com/nmfs-ost/AA-SI_echoSMs/blob/main/Anatomical_Database/Schema/anatomical_data_store.json)
+Mike Jech's alternative schema
