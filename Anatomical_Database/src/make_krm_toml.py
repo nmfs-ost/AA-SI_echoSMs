@@ -35,7 +35,9 @@ import toml
 
 # get the schema json
 print('Read Schema JSON')
-schema_file = Path('echoSMs_datastore_schema.json')
+schema_path = Path('/home/user/AA-SI_echoSMs/Anatomical_Database/Schema')
+schema_filename = Path('echoSMs_datastore_schema.json')
+schema_file = schema_path / schema_filename
 schema_md = ks(schema_file)
 printschema= 'n'
 if (printschema == 'y'):
@@ -47,9 +49,11 @@ validate_schema = kv(schema_ref=schema_md, schema_obj='schema_md', validate_sche
 # read the specimen metadata
 # read from a json file
 print('Read Specimen Metadata')
+json_path = Path('/home/user/AA-SI_echoSMs/Anatomical_Database/Example_Data')
 jsonf = Path('Clupea_harengus_bd.json')
 #jsonf = Path('Clupea_harengus_sb.json')
-json_md = kj(jsonf)
+json_file = json_path / jsonf
+json_md = kj(json_file)
 printjson= 'n'
 if (printjson == 'y'):
     print('METADATA')
@@ -62,7 +66,7 @@ if (validate_json):
 
 # get taxonomic information from WORMS
 print('Get WoRMS Data')
-worms_md = kw(jsonf)
+worms_md = kw(json_file)
 #aphiaID = worms_md.get_aphia_id_by_taxon(returnid=True)
 wormranks = worms_md.get_taxon_ranks_by_aphia_id(returnranks=False)
 vernaculars = worms_md.get_vernaculars_by_aphia_id(language='English', returnvernaculars=True)
@@ -74,7 +78,7 @@ if (printworms == 'y'):
 # read the data
 # select the data file and path
 print('Read the Data')
-dat_filepath = Path('.')
+dat_filepath = Path('/home/user/AA-SI_echoSMs/Anatomical_Database/Example_Data')
 # new metadata format file
 dat_filename = Path('aherr001.dat')
 # clay format file
@@ -130,9 +134,9 @@ if (validate_data):
 
 
 # generate a toml format from the merged data
-create_toml='y'
+create_toml='n'
 if (create_toml == 'y'):
-    tomlf = jsonf.with_suffix('.toml')
+    tomlf = json_file.with_suffix('.toml')
     krm_toml = kt(data_ref=krm_merge, data_obj='krm_data_merged')
     toml_string = krm_toml.data_to_toml_string(return_toml=True)
     krm_toml.data_to_toml_file(toml_file=tomlf)
